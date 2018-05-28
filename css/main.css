@@ -1,0 +1,413 @@
+/* Main CSS Desenvolvido para Mobile */
+
+/*--------------------------------------------------------------------------------------
+Salão Cabalereiro - Template
+0. GLOBAL
+1. BANNER
+2. QUEM SOMOS
+3. SERVICOS
+4. TESTEMUNHOS
+5. CONTATO
+6. MAPA
+7. SOCIAL
+8. RODAPÉ
+ ----------------------------------------------------------------------------------------*/
+
+/*--------------------
+    0. GLOBAL
+ ----------------------*/
+@font-face {
+  font-family: "Caviar Dreams";
+  font-style : normal;
+  font-weight: normal;
+  src        : local('Caviar Dreams'), url("../fonts/CaviarDreams.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Caviar Dreams Bold Italic";
+  font-style : normal;
+  font-weight: normal;
+  src        : local('Caviar Dreams Bold Italic'), url("../fonts/CaviarDreams_BoldItalic.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  font-style : normal;
+  font-weight: normal;
+  src        : local('Caviar Dreams Bold'), url("../fonts/CaviarDreams_Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Caviar Dreams Italic";
+  font-style : normal;
+  font-weight: normal;
+  src        : local('Caviar Dreams Italic'), url("../fonts/CaviarDreamsItalic.woff") format('woff');
+}
+
+@font-face {
+  font-family: "century-gothic Bold";
+  font-style : normal;
+  font-weight: normal;
+  src        : local('century-gothic Bold'), url("../fonts/century-gothic-bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src        : url("../fonts/CenturyGothic.woff2") format('woff2'), url("../fonts/CenturyGothic.woff") format('woff');
+  font-weight: normal;
+  font-style : normal;
+}
+
+body {
+  &.in-transition {
+    transition: transform 900ms ease;
+  }
+}
+
+/*--------------------
+    1. BANNER
+ ----------------------*/
+
+#banner {
+  height           : 100vh;
+  width            : 100%;
+  background-image : url("../img/bannerMobile.jpg");
+  background-repeat: no-repeat;
+  background-size  : cover;
+}
+
+#bannerMobile {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  align-items    : center;
+  height         : 100%;
+}
+
+#logo {
+  width     : 50%;
+  margin-top: 45px;
+}
+
+#banner a {
+  width: 15%;
+}
+
+#seta {
+  width        : 100%;
+  margin-bottom: 45px;
+}
+
+/*--------------------
+    2. QUEM SOMOS
+ ----------------------*/
+
+#quemSomos {
+  text-align: center;
+  padding   : 20px 30px;
+}
+
+#quemSomos h2 {
+  font-family: "Caviar Dreams Bold";
+  font-size  : 38px;
+  margin     : 20px;
+}
+
+#quemSomos p {
+  font-family: "Century Gothic";
+  margin     : 15px;
+  font-size  : 20px;
+  text-align : left;
+}
+
+/*--------------------
+    3. SERVIÇOS
+ ----------------------*/
+#servicos {
+  padding: 0 30px;
+}
+
+#servicos h1 {
+  font-family  : "Caviar Dreams Bold";
+  font-weight  : bold;
+  font-size    : 38px;
+  text-align   : right;
+  margin-bottom: 40px;
+}
+
+#servicos h2 {
+  font-family: "century-gothic Bold";
+  font-weight: bold;
+  font-size  : 23px;
+  text-align : right;
+  margin     : 20px 0 0;
+  line-height: 1;
+}
+
+#servicos p {
+  font-family  : "Century Gothic";
+  font-size    : 20px;
+  text-align   : right;
+  line-height  : 1;
+  margin-bottom: 20px;
+}
+
+#servicos img {
+  width: 100%;
+}
+
+/*--------------------
+    4. TESTEMUNHOS
+ ----------------------*/
+#testemunhos {
+  /* background-color  : rgb(0,165,167); */
+  padding             : 10px 30px;
+  color               : white;
+  margin-top          : 60px;
+  animation-name      : testemunhosFadeIn;
+  animation-delay     : 0s;
+  animation-duration  : 5s;
+  animation-direction : normal;
+  animation-fill-mode : forwards;
+  animation-play-state: paused;
+}
+
+@keyframes testemunhosFadeIn {
+  0 {
+    background-color: rgba(0,165,167,0);
+  }
+
+  100% {
+    background-color: rgba(0,165,167,1);
+  }
+}
+
+#testemunhos h2 {
+  text-align   : right;
+  font-family  : "Caviar Dreams Bold";
+  font-weight  : bold;
+  font-size    : 38px;
+  margin-bottom: 50px;
+  margin-top   : 15px;
+}
+
+#testemunhos h3 {
+  font-size: 23px;
+}
+
+.openQuote {
+  font-family: "century-gothic Bold";
+  font-weight: bold;
+  font-size  : 60px !important;
+  line-height: 0.82;
+  text-indent: -50px;
+  margin     : 0 5px 0 0;
+}
+
+.endQuote {
+  text-align : center;
+  font-family: "century-gothic Bold";
+  font-weight: bold;
+  font-size  : 60px;
+  line-height: 1;
+  margin     : 0;
+}
+
+.subTestemunhos {
+  text-align : center;
+  font-family: "Century Gothic";
+}
+
+.nome {
+  font-family: "century-gothic Bold";
+  font-weight: bold;
+  font-size  : 30px;
+}
+
+.emprego {
+  font-family: "Century Gothic";
+  font-size  : 30px;
+}
+
+.carousel-inner {
+  height: 450px;
+}
+
+.carousel-indicators li {
+  border-radius   : 50%;
+  height          : 20px;
+  width           : 20px;
+  background-color: transparent;
+  border-width    : 2px;
+  border-style    : solid;
+  border-color    : white;
+  margin          : 0 10px;
+}
+
+.carousel-indicators {
+  display: all;
+}
+/*--------------------
+    5. CONTATO
+ ----------------------*/
+#contForm {
+  padding: 10px 30px;
+}
+
+#contForm h4 {
+  font-family: "Caviar Dreams Bold";
+  font-weight: bold;
+  font-size  : 38px;
+  text-align : right;
+}
+
+#contato {
+  padding   : 30px;
+  text-align: right;
+}
+
+#contato span {
+  font-family: "century-gothic Bold";
+  font-weight: bold;
+  font-size  : 23px;
+}
+
+#contato a,
+#contato p {
+  font-family: "Century Gothic";
+  font-size  : 20px;
+  color      : black;
+  margin     : 0;
+}
+
+.imgPointer {
+  padding: 13px 0;
+}
+
+#contato img {
+  height      : 20px;
+  margin-right: 20px;
+}
+
+#func {
+  margin-top: 15px;
+}
+
+/*--------------------
+    6. FORMULARIO
+ ----------------------*/
+
+#form {
+  padding        : 30px;
+  width          : 100%;
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+}
+
+#dadosContato {
+  width          : 75%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  margin-top     : -4px;
+}
+
+.form-control::placeholder {
+  font-family: "Century Gothic";
+  color      : white;
+}
+
+.form-group input {
+  height       : 55px;
+  border-radius: 6px;
+}
+
+.form-group textarea {
+  height       : 300px;
+  resize       : none;
+  border-radius: 6px;
+}
+
+#buttonBox {
+  width     : 20%;
+  height    : 448px;
+  text-align: right;
+}
+
+#formulario button {
+  height         : 100%;
+  width          : 100%;
+  border-radius  : 12px;
+  display        : flex;
+  justify-content: center;
+}
+
+#formulario button:hover {
+  background-color: rgb(66, 61, 76);
+}
+
+#formulario button p {
+  font-family : "Century Gothic";
+  font-size   : 40px;
+  writing-mode: vertical-rl;
+  transform   : rotate(180deg);
+  margin      : 0;
+  padding     : 0;
+}
+
+#formulario button,
+.form-control {
+  background-color: rgb(175,163,198);
+  border          : 0;
+  font-size       : 20px;
+}
+
+#formulario button {
+  background-color: rgb(112,104,130);
+}
+
+/*--------------------
+    6. MAPA
+ ----------------------*/
+
+#maps {
+  height      : 80vh;
+  border-width: 5px 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+/*--------------------
+    7. SOCIAL
+ ----------------------*/
+#social {
+  background-color: rgb(27,188,65);
+  padding         : 20px;
+}
+
+#subSocial {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-around;
+  margin         : auto;
+}
+
+#social img {
+  height: 35px;
+}
+/*--------------------
+    8. RODAPÉ
+ ----------------------*/
+#footer {
+  background-color: rgb(63,63,63);
+  text-align      : center;
+  color           : white;
+  padding         : 5px;
+}
+
+#footer p {
+  margin     : 0;
+  font-family: verdana;
+  font-size  : 17px;
+}

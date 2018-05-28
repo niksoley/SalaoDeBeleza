@@ -1,0 +1,237 @@
+/* Main CSS Desenvolvido para Desktop */
+
+/*--------------------------------------------------------------------------------------
+Salão Cabalereiro - Template
+0. GLOBAL
+1. BANNER
+2. QUEM SOMOS
+3. SERVICOS
+4. TESTEMUNHOS
+5. CONTATO
+6. MAPA
+7. SOCIAL
+8. RODAPÉ
+ ----------------------------------------------------------------------------------------*/
+
+/*--------------------
+    0. GLOBAL
+ ----------------------*/
+
+.menuAnimation {
+  animation-name      : menuFadeIn;
+  animation-delay     : 0s;
+  animation-duration  : 1s;
+  animation-direction : normal;
+  animation-fill-mode : forwards;
+  animation-play-state: paused;
+}
+
+#menuPai {
+  height     : 100vh;
+  display    : flex;
+  align-items: center;
+  position   : fixed;
+}
+
+#menu {
+  height         : 225px;
+  width          : 50px;
+  z-index        : 2;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  align-items    : center;
+  margin-left    : 10px;
+}
+
+.menu1 {
+  width           : 20px;
+  height          : 20px;
+  border-style    : solid;
+  border-width    : 1.5px;
+  border-radius   : 50%;
+  background-color: rgba(255,255,255,0.4);
+  z-index         : 3;
+}
+
+#menu a:hover,
+.active {
+  background-color: black;
+}
+
+#menu a: {
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes menuFadeIn {
+  from {
+    opacity     : 0;
+    border-color: rgba(0,0,0,0);
+  }
+
+  to {
+    opacity     : 1;
+    border-color: rgba(0,0,0,1);
+  }
+}
+
+/*--------------------
+    1. BANNER
+ ----------------------*/
+#banner {
+  background-image   : url("../img/Banner.jpg");
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: center;
+}
+
+#seta {
+  width          : 4%;
+  display        : flex;
+  justify-content: center;
+  margin         : -130px auto auto;
+}
+
+#mascara {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  width          : 35%;
+  height         : 100%;
+}
+
+#primeiraAnimacao {
+  width              : 35%;
+  height             : 100vh;
+  background-color   : rgba(0,0,0,0.4);
+  position           : absolute;
+  top                : 0;
+  left               : 0;
+  animation-name     : slide;
+  animation-delay    : 0s;
+  animation-duration : 5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {
+    top : 0;
+    left: -1000px;
+  }
+
+  to {
+    top : 0;
+    left: 0;
+  }
+}
+
+#logo {
+  width              : 55%;
+  margin             : auto;
+  animation-name     : logoFade;
+  animation-delay    : 0s;
+  animation-duration : 10s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoFade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*--------------------
+    2. QUEM SOMOS
+ ----------------------*/
+
+#quemSomos {
+  padding: 80px 100px 0;
+}
+
+/*--------------------
+    3. SERVIÇOS
+ ----------------------*/
+#servicos {
+  padding: 100px 90px 30px;
+}
+
+#card {
+  display        : flex;
+  flex-direction : row;
+  justify-content: center;
+  border         : 0;
+}
+
+.subServicos {
+  margin: 20px 15px;
+}
+
+#servicos h2 {
+  margin: 40px 0 0;
+}
+
+/*--------------------
+    4. TESTEMUNHOS
+ ----------------------*/
+#testemunhos {
+  padding: 60px 90px 50px;
+}
+
+.carousel-inner {
+  height: 350px;
+}
+
+.subTestemunhos {
+  background-color: transparent;
+}
+
+/*--------------------
+    5. CONTATO
+ ----------------------*/
+#contForm {
+  padding: 90px;
+}
+
+#contato {
+  /* width  : 36.5%; */
+  padding: 30px 0;
+  margin : 0;
+}
+
+/*--------------------
+    6. FORMULARIO
+ ----------------------*/
+
+#form {
+  padding: 80px 0 20px;
+}
+
+/*--------------------
+    7. MAPA
+ ----------------------*/
+
+#maps {
+  height: 60vh;
+}
+
+/*--------------------
+    8. SOCIAL
+ ----------------------*/
+#subSocial {
+  max-width: 500px;
+
+}
