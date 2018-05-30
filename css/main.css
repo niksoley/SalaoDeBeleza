@@ -159,8 +159,8 @@ body {
 /*--------------------
     4. TESTEMUNHOS
  ----------------------*/
-#testemunhos {
-  /* background-color  : rgb(0,165,167); */
+/* #testemunhos {
+
   padding             : 10px 30px;
   color               : white;
   margin-top          : 60px;
@@ -246,7 +246,122 @@ body {
 
 .carousel-indicators {
   display: all;
+} */
+
+/*--------------------
+     6. TESTEMUNHOS
+----------------------*/
+
+#testemunhos {
+  padding                          : 60px;
+  background-color                 : rgba(0,165,167,1);
+  color                            : #FFFFFF;
+  animation-name                   : testemunhosFadeIn;
+  -webkit-animation-name           : testemunhosFadeIn;
+  animation-delay                  : 0.1s;
+  -webkit-animation-delay          : 0.1s;
+  animation-duration               : 5s;
+  -webkit-animation-duration       : 5s;
+  animation-direction              : normal;
+  -webkit-animation-direction      : normal;
+  animation-fill-mode              : forwards;
+  -webkit-animation-fill-mode      : forwards;
+  animation-play-state             : paused;
+  -webkit-animation-play-state     : paused;
+  -webkit-animation-timing-function: linear;
+  animation-iteration-count        : 1;
+  -webkit-animation-iteration-count: 1;
 }
+@keyframes testemunhosFadeIn {
+  0 {
+    background-color: rgba(0,165,167,0);
+  }
+
+  100% {
+    background-color: rgba(0,165,167,1);
+  }
+}
+@-webkit-keyframes testemunhosFadeIn {
+  0 {
+    background-color: rgba(90,127,144,0);
+  }
+
+  100% {
+    background-color: rgba(90,127,144,1);
+  }
+}
+
+#testemunhos h2 {
+  text-align   : center;
+  font-family  : "Caviar Dreams Bold";
+  font-weight  : bold;
+  font-size    : 38px;
+  font-size    : 20pt;
+  margin-bottom: 50px;
+}
+
+.carousel-item {
+  text-align : center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size  : 14pt;
+  margin     : 0 0 100px;
+}
+
+.descricaoTestemunho {
+  margin-bottom: 70px;
+}
+
+.nomeTestemunho {
+  position    : absolute;
+  bottom      : 0;
+  margin-left : auto;
+  margin-right: auto;
+  left        : 0;
+  right       : 0;
+}
+
+.nome {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size  : 16pt;
+}
+
+.emprego {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size  : 16pt;
+}
+
+.openQuote {
+  font-family: "century-gothic Bold";
+  font-weight: bold;
+  font-size  : 60px !important;
+  line-height: 0.8;
+  margin     : 0;
+  padding    : 0 10px;
+}
+
+.endQuote {
+  text-align : center;
+  font-family: "century-gothic Bold";
+  font-weight: bold;
+  font-size  : 60px !important;
+  line-height: 1.5;
+  margin     : 0;
+}
+
+.carousel-indicators li {
+  border-radius   : 50%;
+  height          : 20px;
+  width           : 20px;
+  background-color: transparent;
+  border-width    : 2px;
+  border-style    : solid;
+  border-color    : white;
+  margin          : 0 10px;
+}
+
 /*--------------------
     5. CONTATO
  ----------------------*/

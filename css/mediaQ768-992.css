@@ -187,16 +187,26 @@ Salão Cabalereiro - Template
 /*--------------------
     4. TESTEMUNHOS
  ----------------------*/
-#testemunhos {
-  padding: 60px 90px 50px;
-}
-
-.carousel-inner {
-  height: 350px;
-}
 
 .subTestemunhos {
   background-color: transparent;
+}
+
+#testemunhos {
+  padding: 60px 55px;
+}
+
+.carousel-item {
+  font-size: 16pt;
+  margin   : 0 0 130px;
+}
+
+.nome {
+  font-size: 18pt;
+}
+
+.emprego {
+  font-size: 18pt;
 }
 
 /*--------------------
