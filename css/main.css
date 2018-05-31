@@ -159,101 +159,9 @@ body {
 /*--------------------
     4. TESTEMUNHOS
  ----------------------*/
-/* #testemunhos {
-
-  padding             : 10px 30px;
-  color               : white;
-  margin-top          : 60px;
-  animation-name      : testemunhosFadeIn;
-  animation-delay     : 0s;
-  animation-duration  : 5s;
-  animation-direction : normal;
-  animation-fill-mode : forwards;
-  animation-play-state: paused;
-}
-
-@keyframes testemunhosFadeIn {
-  0 {
-    background-color: rgba(0,165,167,0);
-  }
-
-  100% {
-    background-color: rgba(0,165,167,1);
-  }
-}
-
-#testemunhos h2 {
-  text-align   : right;
-  font-family  : "Caviar Dreams Bold";
-  font-weight  : bold;
-  font-size    : 38px;
-  margin-bottom: 50px;
-  margin-top   : 15px;
-}
-
-#testemunhos h3 {
-  font-size: 23px;
-}
-
-.openQuote {
-  font-family: "century-gothic Bold";
-  font-weight: bold;
-  font-size  : 60px !important;
-  line-height: 0.82;
-  text-indent: -50px;
-  margin     : 0 5px 0 0;
-}
-
-.endQuote {
-  text-align : center;
-  font-family: "century-gothic Bold";
-  font-weight: bold;
-  font-size  : 60px;
-  line-height: 1;
-  margin     : 0;
-}
-
-.subTestemunhos {
-  text-align : center;
-  font-family: "Century Gothic";
-}
-
-.nome {
-  font-family: "century-gothic Bold";
-  font-weight: bold;
-  font-size  : 30px;
-}
-
-.emprego {
-  font-family: "Century Gothic";
-  font-size  : 30px;
-}
-
-.carousel-inner {
-  height: 450px;
-}
-
-.carousel-indicators li {
-  border-radius   : 50%;
-  height          : 20px;
-  width           : 20px;
-  background-color: transparent;
-  border-width    : 2px;
-  border-style    : solid;
-  border-color    : white;
-  margin          : 0 10px;
-}
-
-.carousel-indicators {
-  display: all;
-} */
-
-/*--------------------
-     6. TESTEMUNHOS
-----------------------*/
 
 #testemunhos {
-  padding                          : 60px;
+  padding                          : 60px 0;
   background-color                 : rgba(0,165,167,1);
   color                            : #FFFFFF;
   animation-name                   : testemunhosFadeIn;
@@ -285,11 +193,11 @@ body {
 }
 @-webkit-keyframes testemunhosFadeIn {
   0 {
-    background-color: rgba(90,127,144,0);
+    background-color: rgba(0,165,167,0);
   }
 
   100% {
-    background-color: rgba(90,127,144,1);
+    background-color: rgba(0,165,167,1);
   }
 }
 
@@ -320,12 +228,13 @@ body {
 }
 
 .descricaoTestemunho {
-  margin-bottom: 70px;
+  margin: 0 60px;
+
 }
 
 .nomeTestemunho {
   position    : absolute;
-  top         : 280px;
+  top         : 270px;
   margin-left : auto;
   margin-right: auto;
   left        : 0;

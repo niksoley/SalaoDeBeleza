@@ -1,11 +1,16 @@
-var bodyHeight = ((document.getElementById('home').offsetHeight) / 30);
+$(window).onresize = function() {
+  var bodyHeight = (document.getElementById('banner').offsetHeight);
+};
+var bodyHeight = (document.getElementById('banner').offsetHeight);
+
+//((document.getElementById('home').offsetHeight) / 30);
 
 //get offsets for all your div's.  Now. you can access the number of pixels from the top of the document
 //each object is by using one.top, two.top, or whatever you name your variables
 var one = $("#quemSomos").offset();
 var two = $("#servicos").offset();
 var three = $("#testemunhos").offset();
-var four = $("#formulario").offset();
+var four = $("#contForm").offset();
 var five = $("#maps").offset();
 
 
@@ -17,18 +22,15 @@ $(document).ready(function() {
     //Or, you could just add a click event that calls scroll when the link is clicked, as done below.
     //calling the scrollTop() function with no arguments will give you the current position in pixels of the selected object.
     var screenPosition = $(document).scrollTop();
-    if ((screenPosition + bodyHeight) < one.top) {
+    if ((screenPosition) < one.top) {
       // $(".menuAnimation").css( "animation-direction", "backwards" );
       // $(".menuAnimation").css( "animation-play-state", "initial" );
-
       $(".menu1").addClass("hidden");
+      $("#testemunhos").css("background-color", "white");
     }
-    if ((screenPosition + bodyHeight) >= one.top) {
+    if ((screenPosition + (bodyHeight / 3)) >= one.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
-
-
-
       //be sure you are removing the active-menu class from the other ones.
       $(".2").removeClass("active-menu");
       $(".3").removeClass("active-menu");
@@ -36,7 +38,7 @@ $(document).ready(function() {
       $(".5").removeClass("active-menu");
       $(".1").addClass("active-menu");
     }
-    if ((screenPosition + bodyHeight) >= two.top) {
+    if ((screenPosition + (bodyHeight / 3)) >= two.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
 
@@ -46,33 +48,33 @@ $(document).ready(function() {
       $(".5").removeClass("active-menu");
       $(".2").addClass("active-menu");
     }
-    if ((screenPosition + (bodyHeight + 300)) >= three.top) {
-      $("#testemunhos").css("animation-play-state", "initial");
+    if ((screenPosition + (bodyHeight / 2)) + 100 >= three.top) {
+      setTimeout(function() {
+        $("#testemunhos").css("animation-play-state", "initial");
+        $("#testemunhos").css("-webkit-animation-play-state", "initial");
+      }, 100);
     }
-    if ((screenPosition + bodyHeight) >= three.top) {
+    if ((screenPosition + (bodyHeight / 3)) >= three.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
-
       $(".1").removeClass("active-menu");
       $(".2").removeClass("active-menu");
       $(".4").removeClass("active-menu");
       $(".5").removeClass("active-menu");
       $(".3").addClass("active-menu");
     }
-    if ((screenPosition + bodyHeight) >= four.top) {
+    if ((screenPosition + (bodyHeight / 3)) >= four.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
-
       $(".2").removeClass("active-menu");
       $(".1").removeClass("active-menu");
       $(".3").removeClass("active-menu");
       $(".5").removeClass("active-menu");
       $(".4").addClass("active-menu");
     }
-    if ((screenPosition + (bodyHeight + 100)) >= five.top) {
+    if ((screenPosition + (bodyHeight / 2)) >= five.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
-
       $(".2").removeClass("active-menu");
       $(".1").removeClass("active-menu");
       $(".4").removeClass("active-menu");

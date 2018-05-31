@@ -54,7 +54,6 @@ Salão Cabalereiro - Template
   z-index         : 3;
 }
 
-#menu a:hover,
 .active-menu {
   background-color: black;
 }
@@ -222,8 +221,7 @@ Salão Cabalereiro - Template
 }
 
 .descricaoTestemunho {
-  margin-top   : auto;
-  margin-bottom: 0;
+  margin: auto 0 0;
 }
 
 .nomeTestemunho {

@@ -54,7 +54,6 @@ Salão Cabalereiro - Template
   z-index         : 3;
 }
 
-#menu a:hover,
 .active-menu {
   background-color: black;
 }
