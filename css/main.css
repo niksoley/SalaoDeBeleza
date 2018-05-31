@@ -271,6 +271,8 @@ body {
   -webkit-animation-timing-function: linear;
   animation-iteration-count        : 1;
   -webkit-animation-iteration-count: 1;
+  display                          : block;
+  height                           : 600px;
 }
 @keyframes testemunhosFadeIn {
   0 {
@@ -289,6 +291,15 @@ body {
   100% {
     background-color: rgba(90,127,144,1);
   }
+}
+
+.containerTestemunhos {
+  display: block;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top     : 370px;
 }
 
 #testemunhos h2 {
@@ -314,7 +325,7 @@ body {
 
 .nomeTestemunho {
   position    : absolute;
-  bottom      : 0;
+  top         : 280px;
   margin-left : auto;
   margin-right: auto;
   left        : 0;
@@ -360,6 +371,7 @@ body {
   border-style    : solid;
   border-color    : white;
   margin          : 0 10px;
+  cursor          : pointer;
 }
 
 /*--------------------

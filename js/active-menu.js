@@ -29,22 +29,22 @@ $(document).ready(function() {
 
 
 
-      //be sure you are removing the active class from the other ones.
-      $(".2").removeClass("active");
-      $(".3").removeClass("active");
-      $(".4").removeClass("active");
-      $(".5").removeClass("active");
-      $(".1").addClass("active");
+      //be sure you are removing the active-menu class from the other ones.
+      $(".2").removeClass("active-menu");
+      $(".3").removeClass("active-menu");
+      $(".4").removeClass("active-menu");
+      $(".5").removeClass("active-menu");
+      $(".1").addClass("active-menu");
     }
     if ((screenPosition + bodyHeight) >= two.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
 
-      $(".1").removeClass("active");
-      $(".3").removeClass("active");
-      $(".4").removeClass("active");
-      $(".5").removeClass("active");
-      $(".2").addClass("active");
+      $(".1").removeClass("active-menu");
+      $(".3").removeClass("active-menu");
+      $(".4").removeClass("active-menu");
+      $(".5").removeClass("active-menu");
+      $(".2").addClass("active-menu");
     }
     if ((screenPosition + (bodyHeight + 300)) >= three.top) {
       $("#testemunhos").css("animation-play-state", "initial");
@@ -53,31 +53,31 @@ $(document).ready(function() {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
 
-      $(".1").removeClass("active");
-      $(".2").removeClass("active");
-      $(".4").removeClass("active");
-      $(".5").removeClass("active");
-      $(".3").addClass("active");
+      $(".1").removeClass("active-menu");
+      $(".2").removeClass("active-menu");
+      $(".4").removeClass("active-menu");
+      $(".5").removeClass("active-menu");
+      $(".3").addClass("active-menu");
     }
     if ((screenPosition + bodyHeight) >= four.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
 
-      $(".2").removeClass("active");
-      $(".1").removeClass("active");
-      $(".3").removeClass("active");
-      $(".5").removeClass("active");
-      $(".4").addClass("active");
+      $(".2").removeClass("active-menu");
+      $(".1").removeClass("active-menu");
+      $(".3").removeClass("active-menu");
+      $(".5").removeClass("active-menu");
+      $(".4").addClass("active-menu");
     }
     if ((screenPosition + (bodyHeight + 100)) >= five.top) {
       $(".menu1").removeClass("hidden");
       $(".menuAnimation").css("animation-play-state", "initial");
 
-      $(".2").removeClass("active");
-      $(".1").removeClass("active");
-      $(".4").removeClass("active");
-      $(".3").removeClass("active");
-      $(".5").addClass("active");
+      $(".2").removeClass("active-menu");
+      $(".1").removeClass("active-menu");
+      $(".4").removeClass("active-menu");
+      $(".3").removeClass("active-menu");
+      $(".5").addClass("active-menu");
     }
   });
 

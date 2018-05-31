@@ -55,7 +55,7 @@ Salão Cabalereiro - Template
 }
 
 #menu a:hover,
-.active {
+.active-menu {
   background-color: black;
 }
 

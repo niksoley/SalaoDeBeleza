@@ -55,7 +55,7 @@ Salão Cabalereiro - Template
 }
 
 #menu a:hover,
-.active {
+.active-menu {
   background-color: black;
 }
 
@@ -193,12 +193,28 @@ Salão Cabalereiro - Template
 }
 
 #testemunhos {
-  padding: 60px 55px;
+  padding: 60px 55px 20px;
+  display: block;
+  height : 450px;
+}
+
+.containerTestemunhos {
+  display: block;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top     : 260px;
 }
 
 .carousel-item {
   font-size: 16pt;
   margin   : 0 0 130px;
+}
+
+.nomeTestemunho {
+  position: absolute;
+  top     : 150px;
 }
 
 .nome {
